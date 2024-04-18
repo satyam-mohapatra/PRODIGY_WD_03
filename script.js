@@ -24,6 +24,7 @@ const checkForWinner = () => {
     let check = combination.every(
       (index) => cells[index].innerHTML.trim() === currentPlayer
     );
+    
     if (check) {
       statusText.innerHTML = `${currentPlayer} won`;
       gameIsOver = true;
